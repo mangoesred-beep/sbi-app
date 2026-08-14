@@ -33,7 +33,7 @@ import {
   CheckCircle2,
   Pencil,
 } from "lucide-react";
-import logo from "./assets/loog.png";
+import logo from "./assets/Loog.png";
 
 /* ---------------------------------------------------------
    TOKENS — close cousin of the reference screens, not a
