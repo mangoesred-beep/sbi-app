@@ -387,7 +387,7 @@ function PortfolioScreen({ onMenuClick }) {
             <div className="text-[13px]" style={{ color: "#E1DAF3" }}>
               Portfolio Value
             </div>
-            <div className="text-[28px] font-bold text-white mt-1">{inr(currentValue)}</div>
+            <div className="text-[28px] font-bold text-white mt-1">NA</div>
             <div className="text-[12.5px] mt-4" style={{ color: "#E1DAF3" }}>
               Investment Value
             </div>
@@ -398,19 +398,9 @@ function PortfolioScreen({ onMenuClick }) {
         {/* P&L row */}
         <div className="mx-4 rounded-b-xl border border-t-0 grid grid-cols-3 divide-x" style={{ borderColor: T.line }}>
           {[
-            {
-              label: "Unrealized P&L",
-              value: `${unrealizedPnl < 0 ? "-" : ""}${inr(Math.abs(unrealizedPnl)).replace("₹", "")}`,
-              pct: Math.abs(unrealizedPct).toFixed(2),
-              positive: unrealizedPnl >= 0,
-            },
-            {
-              label: "Today's P&L",
-              value: `${todaysPnl < 0 ? "-" : ""}${inr(Math.abs(todaysPnl)).replace("₹", "")}`,
-              pct: Math.abs(todaysPct).toFixed(2),
-              positive: todaysPnl >= 0,
-            },
-            { label: "Realised P&L", value: "--", pct: null, positive: null },
+            { label: "Unrealized P&L", value: "0.00", pct: "0.00", positive: null },
+{ label: "Today's P&L", value: "0.00", pct: "0.00", positive: null },
+            { label: "Realised P&L", value: "0.00", pct: "0.00", positive: null },
           ].map((c) => (
             <div key={c.label} className="py-3 px-2 text-center">
               <div className="text-[10.5px]" style={{ color: T.sub }}>
