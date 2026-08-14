@@ -502,7 +502,7 @@ function PortfolioScreen({ onMenuClick }) {
                 NA
               </div>
               <div className="text-[11px] mt-0.5" style={{ color: T.sub }}>
-                {inr(investmentValue)} (Investment Value)
+               NA (Investment Value)
               </div>
             </div>
             <div className="text-right">
