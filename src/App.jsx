@@ -74,7 +74,7 @@ function hashStringToRng(str) {
   let h = 1779033703 ^ str.length;
   for (let i = 0; i < str.length; i++) {
     h = Math.imul(h ^ str.charCodeAt(i), 3432918353);
-    h = (h << 13) | (h >>> 19);git
+    h = (h << 13) | (h >>> 19);
   }
   return () => {
     h = Math.imul(h ^ (h >>> 16), 2246822507);
