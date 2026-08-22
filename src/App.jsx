@@ -67,7 +67,7 @@ const inr = (n) =>
    movement Sat/Sun) and it only changes when the effective
    date actually rolls over.
 --------------------------------------------------------- */
-const BANK_BALANCE = 608655.76; // fixed portion of net worth outside the portfolio
+const BANK_BALANCE = 708655.76; // fixed portion of net worth outside the portfolio
 const INVESTMENT_VALUE = 99994.56; // amount originally invested — fixed; portfolio value drifts around this
 
 function hashStringToRng(str) {
